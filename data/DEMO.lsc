@@ -1,0 +1,92 @@
+Example1$$Example2$$Example3$$Sheet04$$Sheet05$$Sheet06$$Sheet07$$Sheet08$$Sheet09$$Sheet10$$Sheet11$$Sheet12$$Sheet13$$Sheet14$$Sheet15$$Sheet16$$Sheet17$$Sheet18$$Sheet19$$Sheet20$$%
+Sheet01
+0.5\times\frac{3}{2}\cdot(10-6)\div 9#--#simplify#--#\frac{1}{3}%
+\frac{\frac{1}{2}-\frac{1}{3}}{\frac{1}{2}+\frac{1}{3}}#--#simplify#--#\frac{1}{5}%
+60!#--#simplify#--#8320987112741390144276341183223364380754172606361245952449277696409600000000000000%
+_{10}\P_{3}#--#simplify#--#720%
+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}#--#simplify#--#\frac{223}{140}%
+\frac{1}{2}+\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}#--#convert-to-decimal#--#1.59285714285714%
+\sqrt{2}\ppi+\ee#--#simplify#--#e + \sqrt{2} \pi%
+\sqrt{2}\ppi+\ee#--#convert-to-decimal#--#7.16116476661741%
+\sqrt[3]{\sqrt[5]{32768}}#--#simplify#--#2%
+\left|\, \ppi-3 \,\right|#--#simplify#--#-3 + \pi%
+(1+\ii)^{10}#--#expand#--#32 i%
+(2x+3y-4z)^2#--#expand#--#4 x^{2} + 12 x y - 16 x z + 9 y^{2} - 24 y z + 16 z^{2}%
+a^3+b^3+c^3-3abc#--#factor#--#\left(a + b + c\right) \left(a^{2} - a b - a c + b^{2} - b c + c^{2}\right)%
+_{3}\C_{0}a^3+_{3}\C_{1}a^2b+_{3}\C_{2}ab^2+_{3}\C_{3}b^3#--#factor#--#\left(a + b\right)^{3}%
+(a^2b^3)^4#--#simplify#--#a^{8} b^{12}%
+3x^2-4x+5#--#complete-square-x#--#3 \left(x - \frac{2}{3}\right)^{2} + \frac{11}{3}%
+ax^2+bx+c#--#complete-square-x#--#a \left(x + \frac{b}{2 a}\right)^{2} + c - \frac{b^{2}}{4 a}%
+2x^3-3x^2+7x-3=0#--#equation-x#--#\left [ \left ( \frac{1}{2}\right ), \quad \left ( \frac{1}{2} - \frac{\sqrt{11} i}{2}\right ), \quad \left ( \frac{1}{2} + \frac{\sqrt{11} i}{2}\right )\right ]%
+2x+3y=4 & 5x-6y=7#--#equation-xy#--#\left \{ x : \frac{5}{3}, \quad y : \frac{2}{9}\right \}%
+x+y+z=6 & x-2y-z=-2 & 3x+2y-z=12#--#equation-xyz#--#\left \{ x : 3, \quad y : 2, \quad z : 1\right \}%
+3x^2-4x-5 \geqq 0#--#inequality-x-1#--#\left(-\infty, - \frac{\sqrt{19}}{3} + \frac{2}{3}\right] \cup \left[\frac{2}{3} + \frac{\sqrt{19}}{3}, \infty\right)%
+x^2+x>0 & 3x^2+5x-2\leqq 0#--#inequality-x-2#--#\left[-2, -1\right) \cup \left(0, \frac{1}{3}\right]%
+a^xb^x(3c)^x#--#simplify-power#--#\left(3 a b c\right)^{x}%
+\log_{2}{32}#--#simplify#--#5%
+\log{(xy^2z^3)}#--#expand-log#--#\log{\left (x \right )} + 2 \log{\left (y \right )} + 3 \log{\left (z \right )}%
+\sin{(\alpha+2\beta)}#--#expand-trig#--#\left(2 \cos^{2}{\left (\beta  \right )} - 1\right) \sin{\left (\alpha  \right )} + 2 \sin{\left (\beta  \right )} \cos{\left (\alpha  \right )} \cos{\left (\beta  \right )}%
+\frac{4-3\sqrt{2}}{4+3\sqrt{2}}#--#rationalize-denom#--#-17 + 12 \sqrt{2}%
+\sqrt{2+\sqrt{3}}#--#sqrtdenest#--#\frac{\sqrt{2}}{2} + \frac{\sqrt{6}}{2}%
+\frac{d}{dx}{(x^2\sin {\ppi x})}#--#simplify#--#x \left(\pi x \cos{\left (\pi x \right )} + 2 \sin{\left (\pi x \right )}\right)%
+\int{~\theta\,\cos {\theta^2} \,d\theta}#--#simplify#--#\frac{1}{2} \sin{\left (\theta ^{2} \right )}%
+\int{~t^2\log{t}\, dt}#--#simplify#--#\frac{t^{3}}{9} \left(3 \log{\left (t \right )} - 1\right)%
+\int_{1}^{\frac{5}{2}}{(x-1)(2x-5)^2 \,dx}#--#simplify#--#\frac{27}{16}%
+\sum_{k=1}^{n}{~k(k+1)^2}#--#factor#--#\frac{n}{12} \left(n + 1\right) \left(n + 2\right) \left(3 n + 5\right)%
+\lim_{x \to -\infty} {(\sqrt{x^2+3x}+x)}#--#factor#--#- \frac{3}{2}%
+a_{n+1}=2a_{n}+3 & a_1=\frac{1}{4}#--#recursive-form-1#--#a_n=\frac{13}{8} 2^{n} - 3%
+a_{n+2}=12a_{n+1}-35a_{n} & a_1=2 & a_2=24#--#recursive-form-2#--#a_n=- 5^{n} + 7^{n}%
+%
+Sheet02
+\ee^{\ppi\ii}#--#simplify#--#-1%
+\int_{0}^{1}{\int_{y}^{2y}{(x^2+y^2+1) \,dx} \,dy}#--#simplify#--#\frac{4}{3}%
+\int_{-1}^{1}{\int_{0}^{\sqrt{1-x^2}}{x^2y \,dy} \,dx}#--#simplify#--#\frac{2}{15}%
+(\frac{d}{dx})^{4}{x^5}#--#simplify#--#120 x%
+\frac{d^{2}}{dx^{2}}{x^5}#--#simplify#--#20 x^{3}%
+\frac{d^{3}}{d\theta^{3}}{(\theta\cos {\theta})}#--#simplify#--#\theta  \sin{\left (\theta  \right )} - 3 \cos{\left (\theta  \right )}%
+\frac{d}{dx}{f(x)}+2f(x)=3\ee^{4x}#--#diff-equation-f(x)#--#f{\left (x \right )} = \left(C_{1} + \frac{e^{6 x}}{2}\right) e^{- 2 x}%
+\frac{d^{2}}{dx^{2}}{f(x)}-2\dfrac{d}{dx}{f(x)}+f(x)=\sin{x}#--#diff-equation-f(x)#--#f{\left (x \right )} = \left(C_{1} + C_{2} x\right) e^{x} + \frac{1}{2} \cos{\left (x \right )}%
+\Gamma(6)#--#simplify#--#120%
+\Gamma(-\frac{3}{2})#--#simplify#--#\frac{4 \sqrt{\pi}}{3}%
+\zeta(2)#--#simplify#--#\frac{\pi^{2}}{6}%
+\zeta(10)#--#simplify#--#\frac{\pi^{10}}{93555}%
+%
+Sheet03
+i^2+\ii^2#--#simplify#--#i^{2} - 1%
+e+\ee#--#convert-to-decimal#--#e + 2.71828182845905%
+\alpha\beta\gamma\delta\epsilon\eta\theta\iota\kappa\lambda\mu\nu\xi\pi\rho\sigma\tau\upsilon\phi\chi\psi\omega+\ppi#--#convert-to-decimal#--#\alpha  \beta  \chi  \delta  \epsilon  \eta  \gamma  \iota  \kappa  \lambda  \mu  \nu  \omega  \phi  \pi  \psi  \rho  \sigma  \tau  \theta  \upsilon  \xi  + 3.14159265358979%
+%
+Sheet04
+%
+Sheet05
+%
+Sheet06
+%
+Sheet07
+%
+Sheet08
+%
+Sheet09
+%
+Sheet10
+%
+Sheet11
+%
+Sheet12
+%
+Sheet13
+%
+Sheet14
+%
+Sheet15
+%
+Sheet16
+%
+Sheet17
+%
+Sheet18
+%
+Sheet19
+%
+Sheet20
+%
