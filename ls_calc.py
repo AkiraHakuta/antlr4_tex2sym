@@ -1,4 +1,4 @@
-# sl_calc.py   Author: Akira Hakuta, Date: 2019/03/31
+# sl_calc.py   Author: Akira Hakuta, Date: 2019/03/30
 # pythonw.exe ls_calc.py
 # LaTeX SymPy Calculator is a calculator with LaTeX expression Form by using SymPy.
 import sys
