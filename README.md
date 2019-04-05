@@ -2,7 +2,7 @@
 
 antlr4_tex2sym parses LaTeX math expressions and converts it into the equivalent SymPy form by using antlr4.  
 
-Author:Akira Hakuta,  Date: 2019/04/04 
+Author:Akira Hakuta,  Date: 2019/04/05 
 
 ## Installation (windows)
 
