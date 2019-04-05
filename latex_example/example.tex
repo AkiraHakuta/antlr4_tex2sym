@@ -1,4 +1,3 @@
-% example.tex   Author: Akira Hakuta, Date: 2019/03/30
 % pdflatex.exe -synctex=1 -interaction=nonstopmode example.tex
 % pythontex.exe example.tex
 % pdflatex.exe -synctex=1 -interaction=nonstopmode example.tex 
@@ -145,7 +144,7 @@ var('A:DFGHJ:MPQRT:Z')
 			\pyc{result=simplify(tex2sym(texexpr))}
 			\py{'${:s}=\displaystyle {:s}$'.format(mylatexstyle(texexpr),mylatex(result))}\myvspace	
 		
-		\item \pyc{texexpr=r'\dfrac{d}{dx} ~{\log_{\,x+1}{3}}'}
+		\item \pyc{texexpr=r'\dfrac{d}{dx} ~{(\log_{\,x+1}{3})}'}
 			\pyc{result=simplify(tex2sym(texexpr))}
 			\py{'${:s}=\displaystyle {:s}$'.format(mylatexstyle(texexpr),mylatex(result))}\myvspace			
 		
@@ -200,9 +199,13 @@ var('A:DFGHJ:MPQRT:Z')
 			\py{'${:s}$'.format(mylatexstyle(texexpr))}\hfill	
 			\py{'$solution:~\displaystyle {:s}$'.format(mylatex(result))}\myvspace	
 						
-		\item \pyc{texexpr='-x^2-x^2'}
+		\item \pyc{texexpr='(a\\!aa\\,a\\:a\\;a~a)^3'}
 			\pyc{result=simplify(tex2sym(texexpr))}
-			\py{'${:s}={:s}$'.format(mylatexstyle(texexpr),mylatex(result))}\myvspace
+			\py{'${:s}=\displaystyle {:s}$'.format(mylatexstyle(texexpr),mylatex(result))}\myvspace
+		
+		\item \pyc{texexpr='\\{\\dfrac{1}{~2~}a-(\\dfrac{1}{~3~}b-\\dfrac{1}{~4~}c)\\}^2'}
+			\pyc{result=expand(tex2sym(texexpr))}
+			\py{'${:s}=\displaystyle {:s}$'.format(mylatexstyle(texexpr),mylatex(result))}\myvspace
 			
 		\item \pyc{texexpr=r'\left\{\dfrac{1}{~2~}a-\left(\dfrac{1}{~3~}b-\dfrac{1}{~4~}c\right)\right\}^2'}
 			\pyc{result=expand(tex2sym(texexpr))}
