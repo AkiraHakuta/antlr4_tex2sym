@@ -1,4 +1,4 @@
-# Generated from C:\Users\Akira\Documents\python_code\github\antlr4_tex2sym\TeX2Sym.g4 by ANTLR 4.7.2
+# Generated from C:\Users\Akira\Documents\python_code\github\antlr4_tex2sym-master\TeX2Sym.g4 by ANTLR 4.7.2
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .TeX2SymParser import TeX2SymParser
@@ -104,6 +104,11 @@ class TeX2SymVisitor(ParseTreeVisitor):
         return self.visitChildren(ctx)
 
 
+    # Visit a parse tree produced by TeX2SymParser#cs_bs_braces.
+    def visitCs_bs_braces(self, ctx:TeX2SymParser.Cs_bs_bracesContext):
+        return self.visitChildren(ctx)
+
+
     # Visit a parse tree produced by TeX2SymParser#power.
     def visitPower(self, ctx:TeX2SymParser.PowerContext):
         return self.visitChildren(ctx)
@@ -131,6 +136,11 @@ class TeX2SymVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by TeX2SymParser#greek.
     def visitGreek(self, ctx:TeX2SymParser.GreekContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by TeX2SymParser#cs_parens.
+    def visitCs_parens(self, ctx:TeX2SymParser.Cs_parensContext):
         return self.visitChildren(ctx)
 
 
@@ -176,6 +186,11 @@ class TeX2SymVisitor(ParseTreeVisitor):
 
     # Visit a parse tree produced by TeX2SymParser#logub.
     def visitLogub(self, ctx:TeX2SymParser.LogubContext):
+        return self.visitChildren(ctx)
+
+
+    # Visit a parse tree produced by TeX2SymParser#bs_braces.
+    def visitBs_braces(self, ctx:TeX2SymParser.Bs_bracesContext):
         return self.visitChildren(ctx)
 
 
