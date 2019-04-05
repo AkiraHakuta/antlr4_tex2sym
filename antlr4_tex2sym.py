@@ -1,4 +1,4 @@
-# antlr4_tex2sym.py   Author: Akira Hakuta, Date: 2017/09/27 
+# antlr4_tex2sym.py   Author: Akira Hakuta, Date: 2019/04/05 
 # python.exe antlr4_tex2sym.py
 
 import sys
@@ -19,15 +19,19 @@ class LaTeX2SymPyVisitor(TeX2SymVisitor):
         value = self.visit(ctx.expr())
         return value
 
+
     def visitInt(self, ctx):
         return ctx.INT().getText()
+
         
     def visitFloat(self, ctx):
         float_str=ctx.FLOAT().getText()
         return 'nsimplify({:s})'.format(float_str)
 
+
     def visitAlphabet(self, ctx):
         return ctx.ALPHABET().getText()
+
         
     def visitGreek(self, ctx):
         return ctx.GREEK().getText()
@@ -58,13 +62,28 @@ class LaTeX2SymPyVisitor(TeX2SymVisitor):
             return '{:s}+{:s}'.format(left,right)
         else:
             return '{:s}-{:s}'.format(left,right)
+
             
+    def visitCs_parens(self, ctx):
+        expr = self.visit(ctx.expr())
+        return '({:s})'.format(expr)
+
 
     def visitParens(self, ctx):
         expr = self.visit(ctx.expr())
         return '({:s})'.format(expr)
         
-        
+    
+    def visitCs_bs_braces(self, ctx):
+        expr = self.visit(ctx.expr())
+        return '({:s})'.format(expr)
+
+
+    def visitBs_braces(self, ctx):
+        expr = self.visit(ctx.expr())
+        return '({:s})'.format(expr)
+
+
     def visitBraces(self, ctx):
         expr = self.visit(ctx.expr())
         return '({:s})'.format(expr)
@@ -129,8 +148,8 @@ class LaTeX2SymPyVisitor(TeX2SymVisitor):
         left = self.visit(ctx.expr(0))
         right = self.visit(ctx.expr(1))
         return '({:s})*({:s})**(-1)'.format(left, right)
-        
-        
+
+
     def visitSum(self, ctx):        
         expr0= self.visit(ctx.expr(0))
         expr1 = self.visit(ctx.expr(1))
@@ -280,8 +299,7 @@ greek_list = [['\\alpha', 'aalpha'], ['\\beta', 'bbeta'], ['\\gamma', 'ggamma'],
 def tex2sym(texexpr):
     if texexpr == '':
         return ''
-    replace_list = [['~',''],['\,',''],['\:',''],['\;',''],['\!',''],['\\dfrac','\\frac'],
-                    ['\\left(','('],['\\right)',')'],['\\left\{','('],['\\right\}',')']]
+    replace_list = [['\\!',' '],['\\,',' '],['\\:',' '],['\\;',''],['~',' ']]
     for el in greek_list:
         replace_list.append(el)
     #print(replace_list)
@@ -303,10 +321,9 @@ def mylatex(sympyexpr):
         texexpr=texexpr.replace(le[1],le[0]+' ') 
     return texexpr
 
-
     
 def mylatexstyle(texexpr):
-    replace_list=[['\\ii',' i'],['\\ee',' e'],['\\ppi','\\pi '],['\\C','\\mathrm{C}'],['\\P','\\mathrm{P}']]
+    replace_list=[['\\ii',' i '],['\\ee',' e '],['\\ppi','\\pi '],['\\C','\\mathrm{C}'],['\\P','\\mathrm{P}']]
     for le in replace_list:
         texexpr=texexpr.replace(le[0],le[1]) 
     return texexpr
@@ -325,6 +342,7 @@ if __name__ == '__main__':
     test('2ab^2(x+y)^3')
     test('\\sqrt{3x}')
     test('\\frac{2}{3}a')
+    test('\\dfrac{2}{3}a')
     test('\\sin {\\ppi x}')
     test('\\log{\\ee^3}')
     test('\\frac{d}{dx}{x^5}')
@@ -334,3 +352,8 @@ if __name__ == '__main__':
     test('3x^2-4x+5 \\geqq 0')
     test('\\frac{d^{2}}{dx^{2}}{f(x)}=-f(x)')
     test('\\alpha\\beta\\gamma\\delta\\epsilon\\eta\\theta\\iota\\kappa\\lambda\\mu\\nu\\xi\\pi\\rho\\sigma\\tau\\upsilon\\phi\\chi\\psi\\omega\\ppi')   
+    test('(a\\!aa\\,a\\:a\\;a~a)^3')
+    test('\\{\\dfrac{1}{~2~}a-(\\dfrac{1}{~3~}b-\\dfrac{1}{~4~}c)\\}^2')
+    test(r'\left\{\dfrac{1}{~2~}a-\left(\dfrac{1}{~3~}b-\dfrac{1}{~4~}c\right)\right\}^2')
+    
+    

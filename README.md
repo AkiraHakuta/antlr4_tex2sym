@@ -2,7 +2,7 @@
 
 antlr4_tex2sym parses LaTeX math expressions and converts it into the equivalent SymPy form by using antlr4.  
 
-Author:Akira Hakuta,  Date: 2019/03/30 
+Author:Akira Hakuta,  Date: 2019/04/04 
 
 ## Installation (windows)
 
@@ -39,6 +39,7 @@ tex2sym: LaTeX math expression --> SymPy form
 3x^2-4x+5 \\geqq 0 --> 3*x**2-4*x+5>=0
 \\frac{d^{2}}{dx^{2}}{f(x)}=-f(x) --> Eq(diff(f(x),x,2),(-1)*f(x))
 \\alpha\\beta\\gamma...\\omega\\ppi --> aalpha*bbeta*ggamma*...*oomega*S.Pi
+...
 ```
 
 ### latex_example/example.tex  
