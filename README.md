@@ -68,7 +68,7 @@ If you want to convert ls_calc.py to .exe files,
 `> pip install cx_Freeze `   
 `> python.exe setup.py `   
 
-### ChangeLog  
+### Change log  
 
 #### 2019-04-09  
 ##### Added
