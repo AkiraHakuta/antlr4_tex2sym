@@ -2,7 +2,7 @@
 
 antlr4_tex2sym parses LaTeX math expressions and converts it into the equivalent SymPy form by using antlr4.  
 
-Author:Akira Hakuta,  Date: 2019/04/05 
+Author:Akira Hakuta,  Date: 2019/04/09 
 
 ## Installation (windows)
 
@@ -67,6 +67,13 @@ If it does not work, download Microsoft Visual C\+\+ 2015 Redistributable.
 If you want to convert ls_calc.py to .exe files,  
 `> pip install cx_Freeze `   
 `> python.exe setup.py `   
+
+###ChangeLog  
+
+####2019-04-09  
+#####Added
+- TeX2Sym.g4  
+`LATEX_SP  :   ('\\!'|'\\,'|'\\:'|'\\;'|'~') -> skip ;`  
 
 
 ----------------------------
