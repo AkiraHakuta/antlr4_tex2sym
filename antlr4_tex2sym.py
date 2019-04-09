@@ -299,15 +299,15 @@ greek_list = [['\\alpha', 'aalpha'], ['\\beta', 'bbeta'], ['\\gamma', 'ggamma'],
 def tex2sym(texexpr):
     if texexpr == '':
         return ''
-    replace_list = [['\\!',' '],['\\,',' '],['\\:',' '],['\\;',''],['~',' ']]
-    for el in greek_list:
-        replace_list.append(el)
-    #print(replace_list)
-    for le in replace_list:
+    for le in greek_list:
         texexpr=texexpr.replace(le[0],le[1])
     expr=antlr4.InputStream(texexpr+'\n')
     lexer = TeX2SymLexer(expr)
     token_stream = antlr4.CommonTokenStream(lexer)
+    #token_stream.fill()
+    #print('tokens:')
+    #for tk in token_stream.tokens:
+    #    print(tk)
     parser = TeX2SymParser(token_stream)
     tree = parser.prog()
     visitor = LaTeX2SymPyVisitor()

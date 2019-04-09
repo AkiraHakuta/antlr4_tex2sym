@@ -55,6 +55,7 @@ FLOAT :  [0-9]* '.'[0-9]+ ;
 INT :   [0-9]+ ;
 NEWLINE:'\r'? '\n' ;     // return newlines to parser (is end-statement signal)
 WS  :   [ \t]+ -> skip ; // toss out whitespace
+LATEX_SP  :   ('\\!'|'\\,'|'\\:'|'\\;'|'~') -> skip ;
 
 // math constant
 PI : '\\ppi';
