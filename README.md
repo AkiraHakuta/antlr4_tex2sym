@@ -59,7 +59,7 @@ LaTeX SymPy Caluculator (calculator with LaTeX expression Form by using SymPy)
 PyQt4: `> pip install PyQt4‑4.11.4‑cp37‑cp37m‑win_amd64.whl`  
 matplotlib: `> pip install matplotlib`   
 &nbsp;  
-`> pythonw.exe ls_calc.p`  
+`> pythonw.exe ls_calc.py`  
 File -> Open -> DEMO.slc  
 &nbsp;  
 If it does not work, download Microsoft Visual C\+\+ 2015 Redistributable.  
